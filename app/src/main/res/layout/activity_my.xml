@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MyActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to switch run mode!"
+        android:onClick="switchRunMode"
+        android:id="@+id/switchRunModeButton"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Alquerque"
+        android:onClick="selectAlquerque"
+        android:id="@+id/createBoardButton"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/boardSize"
+        android:layout_toEndOf="@+id/boardSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pretwa"
+        android:onClick="selectPretwa"
+        android:id="@+id/createPretwaBoard"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/boardSize"
+        android:layout_toEndOf="@+id/boardSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Felli"
+        android:onClick="createFelli"
+        android:id="@+id/createFelli"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/boardSize"
+        android:layout_toEndOf="@+id/boardSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Serpent"
+        android:onClick="createSerpent"
+        android:id="@+id/createSerpent"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/boardSize"
+        android:layout_toEndOf="@+id/boardSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkers"
+        android:onClick="createCheckers"
+        android:id="@+id/createCheckers"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/boardSize"
+        android:layout_toEndOf="@+id/boardSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Start"
+        android:onClick="selectSeries"
+        android:id="@+id/surfaceViewButton"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logOutput"
+        android:layout_below="@id/createBoardButton"
+        />
+
+
+</LinearLayout>
